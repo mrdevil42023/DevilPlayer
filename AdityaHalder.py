@@ -362,29 +362,31 @@ async def start_message_private(client, message):
             pass
             
     else:
-        caption = f"""**➻ Hello, {mention}
+        caption = f"""**👋👋 Hello, {mention}
 
-🥀 I am An ≽ Advanced ≽ High Quality
-Bot, I Can Stream 🌿 Audio & Video In
-Your ♚ Channel And Group.
+😘 𝙸 𝚊𝚖 𝙰𝚗 ≽ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 ≽ 𝙷𝚒𝚐𝚑 𝚀𝚞𝚊𝚕𝚒𝚝𝚢
+𝙱𝚘𝚝, 𝙸 𝙲𝚊𝚗 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌 𝙸𝚗
+𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 𝚘𝚛 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 
+𝚈𝚘𝚞 𝚌𝚊𝚗 𝚙𝚕𝚊𝚢 𝚕𝚊𝚐 & 𝚊𝚍𝚍 𝚏𝚛𝚎𝚎
+𝚑𝚒𝚐𝚑 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚜𝚘𝚗𝚐 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘.
 
-🐬 Must Click ❥ Open Command List
-Button ⋟ To Get More Info's 🦋 About
-My All Commands.
+🔨 𝙲𝚕𝚒𝚌𝚔 𝚘𝚗 𝙷𝙴𝙻𝙿 😜 𝙾𝚙𝚎𝚗 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝙻𝚒𝚜𝚝
+𝙱𝚞𝚝𝚝𝚘𝚗 ⋟ 𝚃𝚘 𝙶𝚎𝚝 𝙼𝚘𝚛𝚎 𝙸𝚗𝚏𝚘'𝚜 📝 𝙰𝚋𝚘𝚞𝚝 
+𝙼𝚢 𝙰𝚕𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜.
 
-💐 Feel Free ≽ To Use Me › And Share
-With Your ☛ Other Friends.**"""
+🥰 𝙵𝚎𝚎𝚕 𝙵𝚛𝚎𝚎 ≽ 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 › 𝙰𝚗𝚍 𝚂𝚑𝚊𝚛𝚎
+𝚆𝚒𝚝𝚑 𝚈𝚘𝚞𝚛 ☛ 𝙾𝚝𝚑𝚎𝚛 𝙵𝚛𝚒𝚎𝚗𝚍𝚜.**"""
         buttons = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="🥀 Add Me In Your Chat ✨",
+                        text="🥰 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🥰",
                         url=f"https://t.me/{bot.me.username}?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="🌺 Open Command List 🌷",
+                        text="😘 ʜᴇʟᴘ 😘",
                         callback_data="open_command_list",
                     )
                 ],
@@ -422,7 +424,7 @@ async def open_command_list_alert(client, query):
 /pause - Pause Running Stream.
 /resume - Resume Paused Stream.
 /skip - Skip Current Stream To Next.
-/end - Stop Current Running Stream.
+/stop - Stop Current Running Stream.
 
 **Note:** All Commands Will Work
 Only in Channels/Groups."""
@@ -430,7 +432,7 @@ Only in Channels/Groups."""
         [
             [
                 InlineKeyboardButton(
-                    text="🔙 Back",
+                    text="👈 Back",
                     callback_data="back_to_home",
                 )
             ],
@@ -448,27 +450,29 @@ async def back_to_home_menu(client, query):
     mention = query.from_user.mention
     caption = f"""**➻ Hello, {mention}
 
-🥀 I am An ≽ Advanced ≽ High Quality
-Bot, I Can Stream 🌿 Audio & Video In
-Your ♚ Channel And Group.
+😘 𝙸 𝚊𝚖 𝙰𝚗 ≽ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 ≽ 𝙷𝚒𝚐𝚑 𝚀𝚞𝚊𝚕𝚒𝚝𝚢
+𝙱𝚘𝚝, 𝙸 𝙲𝚊𝚗 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌 𝙸𝚗
+𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 𝚘𝚛 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 
+𝚈𝚘𝚞 𝚌𝚊𝚗 𝚙𝚕𝚊𝚢 𝚕𝚊𝚐 & 𝚊𝚍𝚍 𝚏𝚛𝚎𝚎
+𝚑𝚒𝚐𝚑 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚜𝚘𝚗𝚐 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘.
 
-🐬 Must Click ❥ Open Command List
-Button ⋟ To Get More Info's 🦋 About
-My All Commands.
+🔨 𝙲𝚕𝚒𝚌𝚔 𝚘𝚗 𝙷𝙴𝙻𝙿 😜 𝙾𝚙𝚎𝚗 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝙻𝚒𝚜𝚝
+𝙱𝚞𝚝𝚝𝚘𝚗 ⋟ 𝚃𝚘 𝙶𝚎𝚝 𝙼𝚘𝚛𝚎 𝙸𝚗𝚏𝚘'𝚜 📝 𝙰𝚋𝚘𝚞𝚝 
+𝙼𝚢 𝙰𝚕𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜.
 
-💐 Feel Free ≽ To Use Me › And Share
-With Your ☛ Other Friends.**"""
+🥰 𝙵𝚎𝚎𝚕 𝙵𝚛𝚎𝚎 ≽ 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 › 𝙰𝚗𝚍 𝚂𝚑𝚊𝚛𝚎
+𝚆𝚒𝚝𝚑 𝚈𝚘𝚞𝚛 ☛ 𝙾𝚝𝚑𝚎𝚛 𝙵𝚛𝚒𝚎𝚗𝚍𝚜.**"""
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="🥀 Add Me In Your Chat ✨",
+                    text="🥰 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🥰",
                     url=f"https://t.me/{bot.me.username}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌺 Open Command List 🌷",
+                    text="😘 ʜᴇʟᴘ 😘",
                     callback_data="open_command_list",
                 )
             ],
@@ -886,20 +890,20 @@ async def stream_audio_or_video(client, message):
     audio = (replied.audio or replied.voice) if replied else None
     video = (replied.video or replied.document) if replied else None
     stickers = [
-        "🌹",
-        "🌺",
-        "🎉",
-        "🎃",
+        "☠️",
+        "👻",
+        "💀",
         "💥",
-        "🦋",
-        "🕊️",
-        "❤️",
-        "💖",
-        "💝",
-        "💗",
-        "💓",
-        "💘",
-        "💞",
+        "👀",
+        "🌡️",
+        "❄️",
+        "🍷",
+        "🥃",
+        "🥂",
+        "🥶",
+        "🥵",
+        "😱",
+        "😴",
     ]
     aux = await message.reply_text(random.choice(stickers))
     if audio:
@@ -935,7 +939,7 @@ async def stream_audio_or_video(client, message):
                 ]
             )
             return await aux.edit_text(
-                "**🥀 Give Me Some Query To\nPlay Audio Or Video❗...\n\nℹ️ Examples:\n≽ Audio: `/play satisfya`\n≽ Video: `/vplay satisfya`**",
+                "**🥀 Give Me Some Query To\nPlay Audio Or Video❗...\n\nℹ️ Examples:\n≽ Audio: `/play Mockingbird`\n≽ Video: `/vplay Shikayat`**",
                 reply_markup=buttons,
             )
         query = message.text.split(None, 1)[1]
@@ -1235,20 +1239,20 @@ async def skip_and_change_stream(client, message):
             return await bot.send_message(chat_id, "**❎ Nothing Streaming❗...**")
         elif call_status == "PLAYING" or call_status == "PAUSED":
             stickers = [
-                "🌹",
-                "🌺",
-                "🎉",
-                "🎃",
+                "☠️",
+                "👻",
+                "💀",
                 "💥",
-                "🦋",
-                "🕊️",
-                "❤️",
-                "💖",
-                "💝",
-                "💗",
-                "💓",
-                "💘",
-                "💞",
+                "👀",
+                "🌡️",
+                "❄️",
+                "🍷",
+                "🥃",
+                "🥂",
+                "🥶",
+                "🥵",
+                "😱",
+                "😴",
             ]
             aux = await message.reply_text(random.choice(stickers))
             await change_stream(chat_id)
@@ -1264,7 +1268,7 @@ async def skip_and_change_stream(client, message):
             return
 
 
-@bot.on_message(cdx(["end", "vend"]) & ~pyrofl.private)
+@bot.on_message(cdx(["end", "stop"]) & ~pyrofl.private)
 async def stop_stream_and_leave_vc(client, message):
     chat_id = message.chat.id
     try:
@@ -1313,7 +1317,7 @@ async def check_sping(client, message):
     await m.edit(f"**🤖 Pinged...!!\nLatency:** `{ms}` ms")
 
 
-@bot.on_message(cdx(["repo", "repository"]) & ~pyrofl.bot)
+@bot.on_message(cdx(["rooo", "bak"]) & ~pyrofl.bot)
 async def git_repo_link(client, message):
     if message.sender_chat:
         mention = message.sender_chat.title
@@ -1322,12 +1326,14 @@ async def git_repo_link(client, message):
     if message.chat.type == ChatType.PRIVATE:
         caption = f"""**➻ Hello, {mention}
     
-🥀 I am An ≽ Advanced ≽ High Quality
-Bot, I Can Stream 🌿 Audio & Video In
-Your ♚ Channel And Group.
+😘 𝙸 𝚊𝚖 𝙰𝚗 ≽ 𝙰𝚍𝚟𝚊𝚗𝚌𝚎 ≽ 𝙷𝚒𝚐𝚑 𝚀𝚞𝚊𝚕𝚒𝚝𝚢
+𝙱𝚘𝚝, 𝙸 𝙲𝚊𝚗 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌 𝙸𝚗
+𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 𝚘𝚛 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 
+𝚈𝚘𝚞 𝚌𝚊𝚗 𝚙𝚕𝚊𝚢 𝚕𝚊𝚐 & 𝚊𝚍𝚍 𝚏𝚛𝚎𝚎
+𝚑𝚒𝚐𝚑 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚜𝚘𝚗𝚐 𝚘𝚛 𝚟𝚒𝚍𝚎𝚘.
 
-🐬 Feel Free ≽ To Use Me › And Share
-With Your ☛ Other Friends.**"""
+🥰 𝙵𝚎𝚎𝚕 𝙵𝚛𝚎𝚎 ≽ 𝚃𝚘 𝚄𝚜𝚎 𝙼𝚎 › 𝙰𝚗𝚍 𝚂𝚑𝚊𝚛𝚎
+𝚆𝚒𝚝𝚑 𝚈𝚘𝚞𝚛 ☛ 𝙾𝚝𝚑𝚎𝚛 𝙵𝚛𝚒𝚎𝚗𝚍𝚜.**"""
     else:
         caption = f"**➻ Hello, {mention}.**"
     buttons = InlineKeyboardMarkup(
@@ -1407,7 +1413,7 @@ async def check_bot_stats(client, message):
     except:
         pass
     photo = START_IMAGE_URL
-    caption = "**⏤͟͞ADITYA PLAYER STATS ༗**"
+    caption = "**Powered by [𝙈𝙍 𝘿𝙀𝙑𝙄𝙇](http://t.me/mrdevil12)**"
     buttons = InlineKeyboardMarkup(
         [
             [
